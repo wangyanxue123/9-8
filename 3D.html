@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .box{
+        width: 100px;
+        height: 200px;
+        background:red;
+        margin:100px auto;
+        -webkit-transform:perspective(800px) rotateY(-50deg) rotateX(45deg);
+        -webkit-transform-style:preserve-3d;
+    }
+    .box1{
+        width: 100%;
+        height: 100%;
+        background:green;
+        -webkit-transition:1s all ease;
+        -webkit-transform:translateZ(0);
+    }
+    .box:active .box1{
+        -webkit-transform:translateZ(200px);
+    }
+</style>
+</head>
+<body>
+    <div class="box">
+        <div class="box1"></div>
+    </div>
+</body>
+</html>
